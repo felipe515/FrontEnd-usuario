@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #e1e7e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+    background-color: #e1e7e7;
+    text-align: center;
+    font-size: 70px;
+    
+}
+.tableContain{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+/*
+th{
+    position: sticky;
+    top: 0;
+}
+*/
+.rTable{
+    width: 40%;
+    text-align: center;
+    background-color: #58af9b;
+    border-radius: 5px;
+}
+
+.rTable thead th{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 20px 20px 15px 20px;
+    background-color: #58af9b;
+
+}
+
+.rTable td{
+    background-color: white;
+    color: #58af9b;
+    
+}
+
+.rTable tr{
+    height: 50px;
+}
+
+tr:first-child th:first-child{
+    border-top-left-radius: 5px;
+}
+
+tr:last-child th:last-child{
+    border-top-right-radius: 5px;
+}
+
+td:nth-child(3), td:nth-child(4){
+    cursor: pointer;
+}
+
+.popupCriarConta{
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.popupCriarConta div{
+    background-color: white;
+}
+
+.popupEditarConta{
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.popupEditarConta div{
+    background-color: white;
+}
+
+.popupExcluir{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #58af9b;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+
+}
+.buttonsExcluir{
+    background-color: #58af9b;
+}
+
+.popupExcluir h2{
+    background-color: #58af9b;
+    color: white;
+    font-size: 22px;
+}
+
+.popupExcluir button{
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+    color: #58af9b;
+}
+
+
+.active{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.nome{
+    background-image: url(./img/usuario.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.8em;
+    background-position-x: 3px;
+    margin-top: 5%;
+    
+}
+
+.senha{
+    background-image: url(./img/senha.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.8em;
+    background-position-x: 3px;
+    
+}
+
+.email{
+    background-image: url(./img/email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.8em;
+    background-position-x: 3px;
+    
+
+}
+
+h1{
+    color: #58af9b;
+    margin-top: 15px;
+    background-color: white;
+    
+}
+
+input{
+    border: none;
+    background-color: #e1e7e7;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 300px;
+    padding-left: 30px;
+
+}
+
+
+
+.sign-up{
+    background-color: #58af9b;
+    
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+
+.adicionar{
+    background-color: #58af9b;
+    
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+  
+}
+
+.pesquisar{
+    background-color: #58af9b;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    margin-right: 18%;
+    color: white;
+}
+.pesquisar::placeholder{
+    color: white;
+}
+
+
+/*
+.color1 { #041122 };
+.color2 { #259073 };
+.color3 { #7fda89 };
+.color4 { #c8e98e };
+.color5 { #e6f99d };
+
+azul claro
+.color1 { #1fc8ac };
+.color2 { #3fd6c1 };
+.color3 { #60e4d6 };
+.color4 { #80f1ea };
+.color5 { #a0ffff };
+
+azul escuro
+.color1 { #4236f6 };
+.color2 { #3229e3 };
+.color3 { #211bcf };
+.color4 { #110ebc };
+.color5 { #0000a8 };

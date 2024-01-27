@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="titulo">Gerenciamento de Usuários</h1>
+    
+    <div class="buttons">
+
+        <input class="pesquisar" type="text" placeholder="Pesquisar...">
+        <button class="adicionar" type="button"onclick="openLoginHome()">Adicionar</button>
+
+    </div>
+
+    <div class="popupCriarConta">
+        <h1>Criar conta</h1>
+        <input type="text" placeholder="Name" class="nome" id="nomeCriar">
+        <input type="text" placeholder="Email" class="email" id="emailCriar">
+        <input type="password" placeholder="Senha" class="senha" id="senhaCriar">
+        <div>
+            <button class="sign-up" onclick="adicionar(), fecharPopHome()">Cadastrar</button>
+            <button class="sign-up" onclick="fecharPopHome()">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="popupEditarConta">
+        <h1>Editar conta</h1>
+        <input type="text" placeholder="Name" class="nome" id="nomeEditar">
+        <input type="text" placeholder="Email" class="email" id="emailEditar">
+        <input type="password" placeholder="Senha" class="senha" id="senhaEditar">
+        <div>
+            <button class="sign-up" onclick="editar(), fecharPopupEditar()">Editar</button>
+            <button class="sign-up" onclick="fecharPopupEditar()">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="popupExcluir">
+        <h2 id="h2Excluir"></h2>
+        <div class="buttonsExcluir">
+            <button type="button" onclick="excluir(), fecharPopupExcluir()">Sim</button>
+            <button type="button" onclick="fecharPopupExcluir()">Nao</button>
+        </div>
+    </div>
+
+    <div class="tableContain">
+        <table class="rTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Editar</th>                 
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
