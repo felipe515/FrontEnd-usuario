@@ -37,11 +37,10 @@ function tableCreate(data){
             row.appendChild(colEmail);
             
             var colEditar = document.createElement("td")
-            var editarLink = document.createElement("a")
-            var imgEditar = document.createElement("img")
-            imgEditar.setAttribute("src", "./img/botao-editar2.png")
-            editarLink.appendChild(imgEditar)
-            colEditar.appendChild(editarLink)
+            var buttonEditar = document.createElement("button");
+            buttonEditar.classList.add("buttonTabela");
+            buttonEditar.textContent = "EDITAR";
+            colEditar.appendChild(buttonEditar)
             colEditar.addEventListener("click", function() {
                 openEdit(element.id, element.nome, element.email);
             });
@@ -49,19 +48,15 @@ function tableCreate(data){
             
             
             var colExcluir = document.createElement("td");
-           // colExcluir.setAttribute("onclick", "openPopup("+element.id+")")
-            var excluirLink = document.createElement("a");
-            var imgExcluir = document.createElement("img");
-            imgExcluir.setAttribute("src", "./img/excluir2.png");
-            excluirLink.appendChild(imgExcluir);
-            colExcluir.appendChild(excluirLink)
+            var buttonExcluir = document.createElement("button");
+            buttonExcluir.classList.add("buttonTabela");
+            buttonExcluir.textContent = "EXCLUIR";
+            colExcluir.appendChild(buttonExcluir)
 
             colExcluir.addEventListener("click", function() {
                 openPopup(element.id, element.nome);
             });
             row.appendChild(colExcluir);
-            
-            
             
             tableBody.appendChild(row);
             console.log(element);

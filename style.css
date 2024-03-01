@@ -126,6 +126,19 @@ td:nth-child(3), td:nth-child(4){
     color: #58af9b;
 }
 
+.buttonTabela{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #58af9b;
+    color: white;
+}
 
 .active{
     display: flex;
@@ -162,6 +175,12 @@ td:nth-child(3), td:nth-child(4){
     background-position-x: 3px;
     
 
+}
+.pesquisar{
+    background-image: url(./img/lupag.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5px;
 }
 
 h1{
